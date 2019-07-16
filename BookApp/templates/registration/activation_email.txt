@@ -1,0 +1,8 @@
+You just signed up for your account on BookApp.Please click the link below to activate it.
+
+http://{ site.domain }}{% url 'registration_activate' activation_key %}
+
+This link is valid for {{expiration_days}}.If it wasn't you that signed up,don't panic.It's safe to ignore this email.
+
+-Regards
+-Team BookApp

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'registration',
     'BookApp',
 ]
 
@@ -121,3 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # APPEND_SLASH = True
+
+#Registration
+ACCOUNT_ACTIVATION_DAYS=7
+REGISTRATION_AUTO_LOGIN=True
