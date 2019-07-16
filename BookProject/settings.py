@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'BookApp',
 ]
 
+INCLUDE_REGISTER_URL = True
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -126,3 +128,5 @@ STATIC_URL = '/static/'
 #Registration
 ACCOUNT_ACTIVATION_DAYS=7
 REGISTRATION_AUTO_LOGIN=True
+
+ACCOUNT_AUTHENTICATED_REGISTRATION_REDIRECTS=False
