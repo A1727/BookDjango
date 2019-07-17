@@ -37,11 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'registration',
+    #'social.apps.django_app.default', 3.4
     'BookApp',
+    'registration',
 ]
 
-INCLUDE_REGISTER_URL = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -66,12 +66,19 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                #'social.apps.django_app.context_processors.backends',  3.4
+                #'social.apps.django_app.context_processors.login_redirect',  3.4
             ],
         },
     },
 ]
 
 WSGI_APPLICATION = 'BookProject.wsgi.application'
+
+#AUTHENTICATION_BACKENDS = (  3.4
+#   'social.backends.facebook.FacebookOAuth2', 3.4
+#   'django.contrib.auth.backends.ModelBackend',  3.4
+#   )
 
 
 # Database
@@ -127,9 +134,27 @@ STATIC_URL = '/static/'
 
 # APPEND_SLASH = True
 
+
+
+#LOGIN_URL='accounts/login/'
+
+#EMAIL SETTINGS
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "advait.sathe@gmail.com"
+EMAIL_HOST_PASSWORD = "dattaguru"
+EMAIL_PORT = 578
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "Books@BookApp.com"
+
 #Registration
-ACCOUNT_ACTIVATION_DAYS=7
-REGISTRATION_AUTO_LOGIN=True
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
+LOGIN_REDIRECT_URL = '/store/'
 
-ACCOUNT_AUTHENTICATED_REGISTRATION_REDIRECTS=False
+INCLUDE_REGISTER_URL = True
+ACCOUNT_AUTHENTICATED_REGISTRATION_REDIRECTS = True
 
+#Social Auth- Facebook  3.4
+#SOCIAL_AUTH_FACEBOOK_KEY = ''  3.4
+#SOCIAL_AUTH_FACEBOOK_SECRET = ''  3.4

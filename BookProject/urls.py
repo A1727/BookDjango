@@ -19,7 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path('soc/',include('social.apps.django_app.url',namespace='social')),  3.4
     path('accounts/', include('registration.backends.default.urls')),
     path('', include('BookApp.urls')),
-   #path('face/', include('FaceApp.urls'))
+
 ]
