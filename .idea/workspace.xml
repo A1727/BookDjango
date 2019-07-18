@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d03f5ff-b9a6-478a-9652-0c863d2a8705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BookApp/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookApp/templates/registration/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookApp/static/base/img/header_full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookApp/static/base/img/header_mobile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookApp/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/activate_failed.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/activate_failed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/activation_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/activation_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/logout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/registration_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/registration_complete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/registration_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookApp/templates/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookApp/templates/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookProject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,34 +23,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookProject/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="138" column="28" lean-forward="true" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
+            <state relative-caret-position="51">
+              <caret line="122" column="15" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/logout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookApp/templates/store.html">
+        <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/logout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="272">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BookApp/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/activate_failed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/activation_complete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="14" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -57,19 +80,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/registration_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookProject/urls.py">
+        <entry file="file://$PROJECT_DIR$/BookApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+            <state relative-caret-position="170">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding>
-                <element signature="e#635#667#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,17 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/registration_complete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BookApp/templates/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -97,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/BookApp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -122,22 +136,22 @@
         <option value="$PROJECT_DIR$/BookApp/templates/store.py" />
         <option value="$PROJECT_DIR$/BookApp/models.py" />
         <option value="$PROJECT_DIR$/BookApp/admin.py" />
-        <option value="$PROJECT_DIR$/BookApp/templates/registration/activation_complete.html" />
-        <option value="$PROJECT_DIR$/BookApp/templates/registration/activate_failed.html" />
         <option value="$PROJECT_DIR$/BookApp/templates/registration/activation_email.txt" />
         <option value="$PROJECT_DIR$/BookApp/templates/registration/activation_email_subject.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/BookApp/urls.py" />
         <option value="$PROJECT_DIR$/BookApp/apps.py" />
+        <option value="$PROJECT_DIR$/BookProject/urls.py" />
+        <option value="$PROJECT_DIR$/BookProject/settings.py" />
+        <option value="$PROJECT_DIR$/BookApp/templates/store.html" />
+        <option value="$PROJECT_DIR$/BookApp/templates/registration/activate_failed.html" />
+        <option value="$PROJECT_DIR$/BookApp/templates/registration/activation_complete.html" />
+        <option value="$PROJECT_DIR$/BookApp/templates/registration/registration_form.html" />
         <option value="$PROJECT_DIR$/BookApp/templates/registration/registration_complete.html" />
         <option value="$PROJECT_DIR$/BookApp/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/BookApp/templates/registration/logout.html" />
-        <option value="$PROJECT_DIR$/BookApp/templates/base.html" />
-        <option value="$PROJECT_DIR$/BookApp/templates/store.html" />
         <option value="$PROJECT_DIR$/BookApp/views.py" />
-        <option value="$PROJECT_DIR$/BookApp/templates/registration/registration_form.html" />
-        <option value="$PROJECT_DIR$/BookProject/urls.py" />
-        <option value="$PROJECT_DIR$/BookProject/settings.py" />
+        <option value="$PROJECT_DIR$/BookApp/templates/base.html" />
       </list>
     </option>
   </component>
@@ -163,6 +177,27 @@
               <item name="BookProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BookProject" type="462c0819:PsiDirectoryNode" />
               <item name="BookApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BookProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BookProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BookProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookProject" type="462c0819:PsiDirectoryNode" />
+              <item name="BookApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BookProject" type="b2602c69:ProjectViewProjectNode" />
@@ -244,11 +279,19 @@
       <option name="project" value="LOCAL" />
       <updated>1563338987927</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Final Commit before leaving on 17th July 2019">
+      <created>1563373694806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563373694806</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21388668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -272,7 +315,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Commit at Tuesday" />
     <MESSAGE value="Final Commit before leaving on 16th July 2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Commit before leaving on 16th July 2019" />
+    <MESSAGE value="Final Commit before leaving on 17th July 2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Commit before leaving on 17th July 2019" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BookApp/template.html" />
@@ -333,6 +377,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/registration/templates/registration/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookApp/templates/base.html" />
+    <entry file="file://$PROJECT_DIR$/BookProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+          <folding>
+            <element signature="e#635#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookApp/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookProject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="122" column="15" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/activation_email_subject.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -347,103 +423,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/activate_failed.html">
+    <entry file="file://$PROJECT_DIR$/BookApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/registration_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/activation_complete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/registration/templates/registration/logout.html">
+    <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/activate_failed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/registration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="170">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookApp/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/registration_complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/logout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookApp/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookApp/templates/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/registration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookApp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BookProject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
-          <folding>
-            <element signature="e#635#667#0" expanded="true" />
-          </folding>
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookProject/settings.py">
+    <entry file="file://$PROJECT_DIR$/BookApp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="138" column="28" lean-forward="true" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
