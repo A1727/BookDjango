@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body>//-->
 <form method="post" action=".">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Log In" />
     <input type="hidden" name="next" value="{{next}}" />
+    <br>
+    <p><strong>-- OR --</strong></p>
+    <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
 </form>
-</body>
-</html>
+<!--</body>
+</html>//-->

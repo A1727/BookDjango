@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'social.apps.django_app.default', 3.4
+    'social_django',
     'BookApp',
     'registration',
+    # 'social.apps.django_app.default', 3.4
 ]
 
 
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'BookProject.urls'
@@ -68,6 +70,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 #'social.apps.django_app.context_processors.backends',  3.4
                 #'social.apps.django_app.context_processors.login_redirect',  3.4
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -75,10 +79,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'BookProject.wsgi.application'
 
-#AUTHENTICATION_BACKENDS = (  3.4
-#   'social.backends.facebook.FacebookOAuth2', 3.4
-#   'django.contrib.auth.backends.ModelBackend',  3.4
-#   )
+
+
 
 
 # Database
@@ -150,11 +152,20 @@ DEFAULT_FROM_EMAIL = "Books@BookApp.com"
 #Registration
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
-LOGIN_REDIRECT_URL = '/store/'
+LOGIN_REDIRECT_URL = '/BookApp/'
 
 INCLUDE_REGISTER_URL = True
 ACCOUNT_AUTHENTICATED_REGISTRATION_REDIRECTS = True
 
-#Social Auth- Facebook  3.4
-#SOCIAL_AUTH_FACEBOOK_KEY = ''  3.4
-#SOCIAL_AUTH_FACEBOOK_SECRET = ''  3.4
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+# Add the Github App credentials.
+
+SOCIAL_AUTH_GITHUB_KEY = '5c946a672a13625a59bb'
+
+SOCIAL_AUTH_GITHUB_SECRET = 'c9f5c3e788831efe32c0575d8985848e4f260495'
+

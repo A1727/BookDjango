@@ -15,12 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from BookApp.views import index
+from django.conf.urls import url
+from BookApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('soc/',include('social.apps.django_app.url',namespace='social')),  3.4
+    path('', views.index),
+    path('BookApp/' , include('BookApp.urls' ), name="BookApp"),
     path('accounts/', include('registration.backends.default.urls')),
-    path('', include('BookApp.urls')),
+    url(r'^oauth/', include('social_django.urls', namespace='social')),
+
+
+
 
 ]
