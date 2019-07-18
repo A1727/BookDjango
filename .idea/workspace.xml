@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d03f5ff-b9a6-478a-9652-0c863d2a8705" name="Default Changelist" comment="Frontend commit for 4.2 latest">
-      <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookApp/templates/registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/registration/registration_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="2d03f5ff-b9a6-478a-9652-0c863d2a8705" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -259,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563338987927</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Auth-user-branch committed latest on 18th July.">
+      <created>1563454714450</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563454714450</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -287,7 +286,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Commit at Tuesday" />
     <MESSAGE value="Final Commit before leaving on 16th July 2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Commit before leaving on 16th July 2019" />
+    <MESSAGE value="Auth-user-branch committed latest on 18th July." />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth-user-branch committed latest on 18th July." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BookApp/template.html" />
@@ -459,7 +459,7 @@
     <entry file="file://$PROJECT_DIR$/BookApp/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
