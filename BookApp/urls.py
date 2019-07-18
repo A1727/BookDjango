@@ -1,7 +1,9 @@
 from django.urls import path
+from django.contrib import admin
 from BookApp import views
-
 urlpatterns = [
-    path('index/', views.index),
-    path('store/', views.store),
+    path('', views.store),
 ]
+
+
+
