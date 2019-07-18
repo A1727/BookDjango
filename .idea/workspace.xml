@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d03f5ff-b9a6-478a-9652-0c863d2a8705" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookApp/static/base/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/static/base/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookApp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/BookApp/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -301,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563458003872</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Frontend commit for 4.2 latest">
+      <created>1563460670608</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563460670608</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
