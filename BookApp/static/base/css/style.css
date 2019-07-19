@@ -13,12 +13,18 @@ a:hover {
     color: #1CBC69;
     text-decoration: none;
 }
-
+.navbar {
+    position: fixed;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
 /* Nav bar styles */
-.navbar, .navbar-inner{
+ .navbar-inner{
 	filter: alpha(opacity=90);
 	-moz-opacity: 0.9;
 	-khtml-opacity: 0.9;
+	position: fixed;
 	opacity: 0.9;
     color: #e6e6e6;
 }
@@ -31,6 +37,13 @@ a:hover {
 .navbar-form {
     padding-top: 8px;
     color: #e6e6e6;
+}
+
+
+.col-md-8.col-md-offset-2.col-sm-12.maincontent {
+    position: fixed;
+    height: -webkit-fill-available;
+    margin-left: 3.7%;
 }
 
 /* Link Effect: Curl Top Right */
@@ -66,7 +79,9 @@ a:hover {
   width: 25px;
   height: 25px;
 }
-
+p {
+    color: white;
+}
 .container-fluid {
     z-index:1;
 }
@@ -79,6 +94,7 @@ img.bg {
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
+
 
   /* Set up positioning */
   position: fixed;
@@ -135,7 +151,7 @@ img.bg {
     width: 100%;
     height: 60px;
     background-color: #000;
-    z-index:-1;
+    z-index:1;
 }
 
 /* Fix a couple things for mobile/low-res */
@@ -154,7 +170,11 @@ img.bg {
     display: inline-block;
     text-align: center;
 }
-
+.row.text-center.navbar.footer {
+    position: fixed;
+    margin-bottom: 0;
+    width: -webkit-fill-available;
+}
 .storefront_book_title {
     font-size: 14px;
     display: block;

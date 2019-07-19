@@ -70,12 +70,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'social_django',
-    'bootstrap3',
-    'bootstrap_themes',
     'BookApp',
     'registration',
-
+    'bootstrap3',
+    'bootstrap_themes',
+    #'compressor',
     # 'social.apps.django_app.default', 3.4
 ]
 
