@@ -25,7 +25,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -70,12 +69,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'BookApp',
     'registration',
     'bootstrap3',
     'bootstrap_themes',
-    #'compressor',
-    # 'social.apps.django_app.default', 3.4
+    'BookApp',
+    'compressor',
+
 ]
 
 
@@ -254,13 +253,16 @@ USE_TZ = True
 
 
 
+
+
 STATIC_URL = '/static/'
-
-
-#STATIC_ROOT = os.path.join(BASE_DIR,'static/')
-
-
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+COMPRESS_ENABLE = True
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
 
 # APPEND_SLASH = True
 
@@ -270,7 +272,7 @@ STATIC_URL = '/static/'
 
 
 
-#LOGIN_URL='accounts/login/'
+LOGIN_URL='accounts/login/'
 
 
 
