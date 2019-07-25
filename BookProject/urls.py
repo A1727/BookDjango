@@ -20,7 +20,7 @@ from BookApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
+    path('', views.index,name="index"),
     path('BookApp/' , include('BookApp.urls' ), name="BookApp"),
     path('accounts/', include('registration.backends.default.urls')),
     url(r'^oauth/', include('social_django.urls', namespace='social')),
