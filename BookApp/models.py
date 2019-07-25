@@ -4,7 +4,6 @@ from django.contrib.auth.models import User     #import default user model
 # Create your models here.
 #djando itself create database and it interacts or talks with database through models. Model acts as a data layer. Usually single model maps with single database.
 
-#This is our store and we are going to sell books.
 
 
 class Author(models.Model):
@@ -20,7 +19,7 @@ class Book(models.Model):
     author = models.ForeignKey(Author,on_delete=models.CASCADE)
     description = models.TextField()
     publish_date = models.DateField(default=timezone.now)
-    price = models.DecimalField(decimal_places=2, max_digits=8)         #default value is added while migration as there are existing rows in database so they need to provide default value.
+    price = models.DecimalField(decimal_places=2, max_digits=8)
     stock = models.IntegerField(default=0)
 
 
@@ -30,4 +29,41 @@ class Review(models.Model):
     publish_date = models.DateField(default=timezone.now)
     text = models.TextField()
 
+class Cart(models.Model):
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    active = models.BooleanField(default=True)
+    order_date = models.DateField(null=True)
+    payment_type = models.CharField(max_length=100, null=True)
+    payment_id = models.CharField(max_length=100, null=True)
 
+    def add_to_cart(self, book_id):
+        book = Book.objects.get(pk=book_id)
+        try:
+            preexisting_order = BookOrder.objects.get(book=book, cart=self)
+            preexisting_order.quantity += 1
+            preexisting_order.save()
+        except BookOrder.DoesNotExist:
+            new_order = BookOrder.objects.create(
+                book=book,
+                cart=self,
+                quantity=1
+            )
+            new_order.save()
+
+    def remove_from_cart(self, book_id):
+        book = Book.objects.get(pk=book_id)
+        try:
+            preexisting_order = BookOrder.objects.get(book=book, cart=self)
+            if preexisting_order.quantity > 1:
+                preexisting_order.quantity -= 1
+                preexisting_order.save()
+            else:
+                preexisting_order.delete()
+        except BookOrder.DoesNotExist:
+            pass
+
+
+class BookOrder(models.Model):
+    book = models.ForeignKey(Book,on_delete=models.CASCADE)
+    cart = models.ForeignKey(Cart,on_delete=models.CASCADE)
+    quantity = models.IntegerField()
