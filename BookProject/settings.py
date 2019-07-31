@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'bootstrap_themes',
     'registration',
+    'debug_toolbar',
     #'social.apps.django_app.default',
 ]
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'social_django.middleware.SocialAuthExceptionMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'BookProject.urls'
@@ -134,6 +136,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
 MEDIA_URL="/media/"
+
+INTERNAL_IPS = [
+    '127.0.0.1'
+]
 #registration
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
