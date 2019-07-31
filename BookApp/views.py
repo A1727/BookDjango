@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
 from .models import Book, BookOrder, Cart, Review
 from .forms import ReviewForm
@@ -17,7 +17,7 @@ def store(request):
     return render(request, 'base.html', context)
 
 def book_details(request,book_id):
-    book = Book.objects.get(pk=book_id)
+    book = get_object_or_404(Book, id=book_id)
     context = {
         'book': book,
     }
