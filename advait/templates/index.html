@@ -1,0 +1,46 @@
+{% load staticfiles %}      <!--Load staticfiles module-->
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="{% static 'advait/style.css' %}" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+
+{% block bootstrap3_title %}
+    {% block title %}
+        <h1 align="center">ADVAIT DHANANJAY SATHE</h1>
+    {% endblock %}
+{% endblock %}
+
+
+{% block bootstrap3_content %}
+    <p align="center">Today morning, as I was going through updates on social media, I came across a wonderful video. A video which talked about the most important five letter word in the World. A word that almost governs our whole life and the way we choose to look at life.</p>
+    <h1 align="center">S.M.I.L.E</h1>
+    <h4 align="center">See Miracles In Life Everyday</h4>
+{% endblock %}
+
+<img src="{% static 'advait/images/contest.jpg' %}" class="image" align="center">
