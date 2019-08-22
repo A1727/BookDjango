@@ -18,7 +18,7 @@ class IndexView(generic.ListView):
         """
         return Question.objects.filter(
             pub_date__lte=timezone.now()
-        ).order_by('-pub_date')[:5]
+        ).order_by('-pub_date')[:6]
 
 
 class DetailView(generic.DetailView):
@@ -29,6 +29,10 @@ class DetailView(generic.DetailView):
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
+
+class FeedbackView(generic.DetailView):
+    model = Question
+    template_name = 'polls/feedback.html'
 
 
 def vote(request, question_id):
@@ -47,4 +51,4 @@ def vote(request, question_id):
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
-        return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+        return HttpResponseRedirect(reverse('polls:feedback', args=(question.id,)))

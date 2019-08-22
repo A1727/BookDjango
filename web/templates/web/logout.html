@@ -1,0 +1,12 @@
+{% extends 'web/base.html' %}
+
+{% block body %}
+<h2 align="center">Thanks for visiting this site !</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="col-md-2">
+        <a href="{% url 'login' %}" align="center">Home</a>
+    </div>
+</form>
+{% endblock %}

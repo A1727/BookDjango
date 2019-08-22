@@ -1,0 +1,15 @@
+{% extends 'web/base.html' %}
+{% block body %}
+    <h2 align="center">Welcome {{ member.firstname }} {{ member.lastname}} </h2>
+
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="col-md-2">
+        <a href="{% url 'logout' %}" align="center">Logout</a>
+
+        <a href="{% url 'polls:index' %}">Poll Here</a>
+    </div>
+</form>
+{% endblock %}
+

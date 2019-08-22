@@ -1,7 +1,13 @@
-li a {
-    color: red;
+body {
+    background-image:url("images/ind.gif");
+    background-size: cover;
+    text-shadow: 2px 2px black;
 }
 
-body {
-    background: white url("images/background.gif") no-repeat;
+li a:visited {
+    color:red;
+}
+
+li a:hover {
+    color:gold;
 }
