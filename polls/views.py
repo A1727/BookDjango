@@ -4,6 +4,8 @@ from django.utils import timezone
 from django.urls import reverse
 from django.views import generic
 from django.http import Http404
+
+from web.models import Member
 from .models import Question, Choice
 # Create your views here.
 

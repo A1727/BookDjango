@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.shortcuts import render, redirect
 from .models import Member
 # Create your views here.
 
@@ -17,11 +17,22 @@ def logout(request):
     return render(request, 'web/logout.html')
 
 def home(request):
+
     if request.method == 'POST':
         if Member.objects.filter(username=request.POST['username'], password=request.POST['password']).exists():
             member = Member.objects.get(username=request.POST['username'], password=request.POST['password'])
-            return render(request, 'web/home.html', {'member': member})
+            firstname = member.firstname
+            lastname = member.lastname
+
+            request.session['first'] = firstname
+            request.session['last'] = lastname
+
+            return render(request, 'web/home.html', {'firstname': firstname, 'lastname': lastname})
         else:
             context = {'msg': 'Invalid username or password'}
             return render(request, 'web/login.html', context)
+    else:
+        return render(request, 'web/home.html', {'firstname': request.session['first'], 'lastname': request.session['last']})
+
+
 
